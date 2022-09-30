@@ -3,4 +3,4 @@ node_modules/
 cypress/plugins
 cypress/videos
 cypress/fixtures
-cypress/e2e
+cypress/screenshots
