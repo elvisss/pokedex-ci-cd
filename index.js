@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const { version } = require('./package.json')
 const app = express()
 
@@ -10,7 +11,7 @@ app.get('/version', (_req, res) => {
   res.send({ version })
 })
 
-app.use(express.static('dist'))
+app.use(express.static(path.join(__dirname, 'dist')))
 
 const PORT = process.env.PORT || 5000
 

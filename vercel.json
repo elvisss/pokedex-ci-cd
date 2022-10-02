@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "webpack --mode production",
   "builds": [
     {
       "src": "./index.js",
