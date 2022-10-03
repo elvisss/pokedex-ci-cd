@@ -101,6 +101,10 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         with:
           fetch-depth: 0
+      - uses: actions/download-artifact@v2
+        with:
+          name: dist
+          path: dist
       - name: Install Vercel CLI
         if: ${{ github.event_name == 'push' }}
         run: npm install --global vercel@latest
